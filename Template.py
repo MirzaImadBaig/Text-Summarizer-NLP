@@ -30,8 +30,8 @@ list_of_files = [
 ]
 
 for filepath in list_of_files:
-    filepath = Path(filepath)                                                          # Converts the string file path to a Path object for easier manipulation
-    filedir, filename = os.path.split(filepath)                                        # Splits the path into the directory part (filedir) and the filename part (filename)
+    filepath = Path(filepath)                                                          # Converts the string file path to a Path object for easier manipulation 
+    filedir, filename = os.path.split(filepath)                                        # Splits the path into the directory part (filedir) and the filename part (filename) [eg: "config/config.yaml", here 'config' is directory and 'config.yaml' is a file]
 
     if filedir != "":                                                                  # Creates the Directory if It Doesn't Exist
         os.makedirs(filedir, exist_ok=True)                                            # Creates the directory and check 'exist_ok=True' to avoid raising an error if the directory already exists
