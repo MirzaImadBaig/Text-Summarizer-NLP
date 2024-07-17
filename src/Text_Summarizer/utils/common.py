@@ -1,9 +1,9 @@
-# WE WILL USE UTILS FILE TO SAVE AND IMPORT FUNCTIONS THAT ARE USED FREQUENTLY 
+# WE WILL USE UTILS FILE TO SAVE AND IMPORT FUNCTIONS THAT ARE USED FREQUENTLY
 
 import os                                                   # Provides a way of using operating system-dependent functionality like reading or writing to the file system, interacting with the environment variables, etc.
 from box.exceptions import BoxValueError                    # Imports BoxValueError exception from the box library, which is used for handling errors related to Box configuration objects
 import yaml                                                 # Provides the functionality to read from and write to YAML files, which are often used for configuration.
-from Text_Summarizer.logging import logger                   # Importing Custom Logger
+from src.Text_Summarizer.logging import logger                   # Importing Custom Logger
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
